@@ -1,21 +1,71 @@
 .hero-container {
-	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/puppy.jpg) no-repeat center center fixed;
+	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg ) no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
+	position: relative;
 
 	h1 {
-		padding: 1em .5em;
-		font-size: 2.4em;
+//		padding: 1em .5em;
+		font-size: 2.2em;
 		max-width: 15em;
-		color: whitesmoke;
-		float: right;
-		margin: 6em .5em;
-		background-color: rgba(0, 0, 0, .5);
+		color: lightblue;
 		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 1px;
+	
 	}
 
 }
+
+.zindex {
+	position: relative;
+	z-index: 100;
+}
+
+.hero-content-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+}
+
+.hero-content-intro {
+	position: absolute;
+	top: 40vh;
+	left: 50%;
+	transform:translate(-50%);
+	text-align: center;
+	button {
+		background-color: black;
+		border: none;
+		color: white;
+		padding: .5em 1em;
+		font-size: 1.3em;
+		border-radius: .2em;
+		cursor: pointer;
+	}
+}
+
+.referral-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	background-color: $main-color;
+	bottom: 0;
+}
+
+.hero-content-main {
+	position: relative;
+	z-index: 1000;
+	text-align: center;
+	padding-top: 12em;
+	margin: 0 auto;
+	width: 35em;
+	h1 {max-width: 100%;}
+	
+}
+
 
 .section-1 {
 	padding: 4rem 1.5rem;

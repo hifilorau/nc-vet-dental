@@ -1,6 +1,12 @@
 
 /*desktop nav */
 
+.header {
+//	opacity: 0;
+//	transtition: opacity 1s ease;
+}
+
+
 .desktop-nav-container {
   position: absolute;
   top: 0;
@@ -10,7 +16,11 @@
 	background-color: $main-color;
 	padding: 1em;
 	border-bottom: 1px white solid;
+//	opacity: 0;
+//	transition: opacity 1s;
 }
+
+
 
 .desktop-nav {
   display: flex;
@@ -249,9 +259,9 @@ body {
     display:block;
   }
  
-
-
-	
 }
+		.aaha {
+			margin-left: 4px;
+		}	
 }
 
