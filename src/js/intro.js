@@ -1,6 +1,6 @@
 $(function() {
-  	$('.footer').hide();
-		$('.desktop-nav-container').hide();
+  	// $('.footer').hide();
+		// $('.desktop-nav-container').hide();
   	$('.hero-content-main').hide();
 	
 	$('.pet-button').click(function(){

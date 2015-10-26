@@ -13,7 +13,7 @@
   left: 0;
   right:0;
   z-index: 100;
-	background-color: $main-color;
+	background-color: #183740;
 	padding: 1em;
 	border-bottom: 1px white solid;
 //	opacity: 0;
@@ -171,9 +171,10 @@ svg {
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-	background-color: $main-color;
+	background-color: #183740;
 	color: white;
 	padding: 2em 0;
+	z-index: 100000;
 	a {
 		color: white;
 	}

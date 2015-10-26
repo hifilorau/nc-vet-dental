@@ -5,15 +5,19 @@
 
 }
 
-
+.shiv {
+	height: 112px;
+	position: relative;
+}
 
 .philosophy-container {
-//	padding-top: 2em;
-//	max-width: 1100px;
+	padding-top: 2em;
+	/*max-width: 1100px;*/
 	min-height: 74vh;
 	color: white;
-	background: url(https://s3-us-west-2.amazonaws.com/krista-anne/highfive.jpg) no-repeat center center fixed;
+	background: url(https://images.unsplash.com/photo-1422363037975-f6a4c2c924fc?q=80&fm=jpg&s=5cf3a74e5cf22d1581f15457d4e10430) no-repeat center center fixed;
 	background-size: cover;
+	background-position: 0 0px;
 	position: relative;
 	display:flex;
 	flex-direction: column;
@@ -30,7 +34,7 @@
 	padding: 0 1em;
 	max-width: 60rem;
 	margin: -50px auto 0;
-//	clear: right;
+	clear: right;
 	text-align: left;
 	position: relative;
 	z-index: 1000;
