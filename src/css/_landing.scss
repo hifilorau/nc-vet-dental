@@ -44,16 +44,28 @@
 		border-radius: .2em;
 		cursor: pointer;
 	}
+	
+	h1 {
+	min-height: 2.9em;
+	}
 }
 
-.referral-overlay {
+.referral-overlay, .client-overlay {
 	position: absolute;
-	top: 0;
+	top: -112px;
 	right: 0;
 	width: 50%;
-	background-color: $main-color;
+	background-color: tan;
 	bottom: 0;
 }
+
+.client-overlay {
+ left: 0;
+ right: auto;
+	
+}
+
+
 
 .hero-content-main {
 	position: relative;
