@@ -4,7 +4,7 @@ $(function() {
 		siteState = null;
 		localStorage.setItem("siteState", siteState);
 		console.log(siteState);
-			$('.hero-content-main').hide();
+		$('.hero-content-main').hide();
 	}
 	
 		var siteState = localStorage.getItem("siteState");
