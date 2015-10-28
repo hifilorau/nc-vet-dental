@@ -57,6 +57,7 @@
 	width: 50%;
 	background-color: tan;
 	bottom: 0;
+	z-index: 100;
 }
 
 .client-overlay {
@@ -71,9 +72,8 @@
 	position: relative;
 	z-index: 1000;
 	text-align: center;
-	padding-top: 12em;
 	margin: 0 auto;
-	width: 35em;
+	width: 100%;
 	h1 {max-width: 100%;}
 	
 }

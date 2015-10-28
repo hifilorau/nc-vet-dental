@@ -31,6 +31,11 @@ $(function() {
 		checkState();
 		$('.referral-overlay').hide("slide", { direction: "right" }, 2000);
 		$('.client-overlay').hide("slide", { direction: "left" }, 2000);
+//		setTimeout(function(){
+		$('.hero-content-main').html(
+			'<div class="referral-container"></div>'
+			);
+//		},100);
 	});
 	
 	////pet side 
@@ -51,8 +56,9 @@ $(function() {
 		if (siteState === "referrals") {
 			console.log(siteState);
 			$('.referral').show();
-			$('.footer').show();
 			$('.desktop-nav-container').show();
+//			delayThings();
+
 		}
 		
 		if (siteState === "pet-owners") {
@@ -74,7 +80,7 @@ $(function() {
 			$('.hero-overlay').hide();
 			$('.hero-content-intro').hide();
 			$('.hero-content-main').fadeIn(2000);
-    }, 2000);	
+    }, 500);	
 	
 	}
 	
