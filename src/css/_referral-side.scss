@@ -4,5 +4,50 @@
   background-color: white;
 	position: relative;
 	z-index: 10;
+  font-size: 1.2em;
+}
+
+.vet-content {
+	padding-top: 2em;
+  display: table; 
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.refer-row {
+  display: table-row;
+  line-height: 1.7em;
+}
+
+.log-in {
+  display: table-cell;
   
 }
+
+
+.table-head {
+  display: table-cell;
+  min-width: 15em;
+	text-align: left;
+}
+
+.table-content {
+  display: table-cell;
+  max-width: 40em;
+	text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+	
+	.referral-container {
+		padding-top: 2em;
+	}
+	
+	.vet-content, .table-head, .table-content {
+		display: block;
+	}
+
+
+
+}
+
