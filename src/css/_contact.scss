@@ -1,10 +1,10 @@
 .contact-container {
 	padding-top: 2em;
-	background: url(https://static.pexels.com/photos/4933/lake-animals-dogs-pets.jpg) no-repeat center center fixed;
+	background: url(https://static.pexels.com/photos/5018/animal-dog-pet-brown.jpg) no-repeat center center fixed;
 	background-size: cover;
+	background-position: 0 0;
 	color: white;
 	a {
-		color: $main-color;
 		font-weight: 700;
 	}
 }
@@ -45,7 +45,7 @@
 //	border: 1px solid;
 	width: 9.75em;
 	padding: .3em 1em .2em;
-	background-color: $main-color;
+	background-color: $quad-color;
 	color: white !important;
 	margin: .5em auto;
 
