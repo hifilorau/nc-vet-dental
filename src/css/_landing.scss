@@ -63,10 +63,18 @@
 .client-overlay {
  left: 0;
  right: auto;
+ background: url("https://images.unsplash.com/photo-1422565096762-bdb997a56a84?ixlib=rb-0.3.5&q=80&fm=jpg&s=66e51dee4412efd90af559ff6266e7c7") no-repeat right top;
+ background-size: cover;
+ background-position: -18em 0em;
 	
 }
 
+.referral-overlay {
+	background: url("https://images.unsplash.com/photo-1431613567644-1c0d5d7d1c8c?ixlib=rb-0.3.5&q=80&fm=jpg&s=680880496ca3dd9fac5448c545bf864f") no-repeat left top;
+	background-size: cover;
+	background-position: -5em 0em;
 
+}
 
 .hero-content-main {
 	position: relative;
