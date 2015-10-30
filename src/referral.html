@@ -11,6 +11,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="css/main.css">
+	<script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,36 +28,35 @@
   
     <header class="header"></header>
     <div class="site-wrap">
-			<form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbyWG7ZzB0cmPyzZMZlXBAXcCnx26lW4mNdWECxHXqT0BKrOpeg/exec">
+			<form id="gform" action="" class="pure-form pure-form-stacked">
 
 			<fieldset class="pure-group">
 				<label for="name">Pet Name </label>
-				<input type="text" id="name" name="name" placeholder="What is the pet's name?" />
+				<input type="text" id="pet-name" name="pet-name" placeholder="What is the pet's name?" />
 			</fieldset>
 
     <fieldset class="pure-group">
       <label for="breed">Breed </label>
-      <input type="text" id="name" name="breed" placeholder="What is the pet's breed?" />
+      <input type="text" id="breed" name="breed" placeholder="What is the pet's breed?" />
     </fieldset>
 				
 		<fieldset class="pure-group">
       <label for="sex">Sex </label>
 			<div class="sex-div">
-      <input type="radio" name="sex" value="male" checked>Male
+      <input type="radio" name="sex" id="sex-m" value="male" checked>Male
 			</div>
 			<div class="sex-div">
-			<input type="radio" name="sex" value="female">Female
+			<input type="radio" name="sex" id="sex-f" value="female">Female
 			</div>
     </fieldset>
 				
 		<fieldset class="pure-group">
       <label for="spayed-neutered">Spayed or Neutured</label>
 			<div class="sex-div">
-      <input type="radio" name="spayed-neutered" value="yes" checked>Yes
+      <input type="radio" id="spayed-neutered-y" name="spayed-neutered" value="yes" checked>Yes
 			</div>
 			<div class="sex-div">
-			<input type="radio" name="spayed-neutered" value="no">No
+			<input type="radio" id="spayed-neutered-n" name="spayed-neutered" value="no">No
 			</div>
     </fieldset>
 				
@@ -90,7 +90,7 @@
 
     <fieldset class="pure-group">
       <label for="email"><em>Veternarians'</em> Email Address:</label>
-      <input type="email" id="email" name="email" type="email" value=""
+      <input type="email" id="vet-email" name="vet-email" type="email" value=""
       required placeholder="your.name@email.com"/>
       <span id="email-invalid" style="visibility:hidden">
         Must be a valid email address</span>
@@ -142,8 +142,8 @@
       placeholder="Previous Dental Care (please include dates)?"></textarea>
     </fieldset>
 
-    <button class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    <input type="submit" class="button-success pure-button button-xlarge">
+     </input>
 
   </form>
 
