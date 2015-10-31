@@ -32,12 +32,12 @@ app.referralForm = function () {
 		console.log('maybe');
 		e.preventDefault();
 //		e.stopPropagation();
-	var referralForm = new Firebase("https://vet-dental-referral.firebaseio.com/referral");
+	var newReferral = new Firebase("https://vet-dental-referral.firebaseio.com/referral");
 		
-		var newReferral = referralForm.child('form');
+//		var newReferral = referralForm.child('form');
 		//form data
 	
-		newReferral.setWithPriority({
+		newReferral.push({
 			petName: $('#pet-name').val(),
 			breed: $('#breed').val(),
 			sex: $('input[type="radio"][name="sex"]:checked').val(),
@@ -56,7 +56,7 @@ app.referralForm = function () {
 			medications: $('#medications').val(),
 			allergies: $('#allergies').val(),
 			prevDental: $('#prev-dental').val()	
-		}, Firebase.ServerValue.TIMESTAMP
+		});
 //										 ,{
 //			success: function(referralForm) {
 //				console.log(referralForm);
@@ -64,13 +64,7 @@ app.referralForm = function () {
 //			error: function(referralForm, error) {
 //            console.log(parseObj);
 //            console.log(error);
-//        }   
-		);
-		
-		
-	
-		
-		
+//        }   		
 	});
 	
 };
