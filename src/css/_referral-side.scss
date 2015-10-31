@@ -1,16 +1,16 @@
 .referral-container {
   width: 100%;
   min-height: 100vh;
-  background-color: white;
+  background-color: #F8F5E6;
 	position: relative;
 	z-index: 10;
   font-size: 1.2em;
 }
 
 .vet-content {
-	padding-top: 2em;
+	padding-top: 1em;
   display: table; 
-	max-width: 90%;
+	max-width: 1050px;
 	margin: 0 auto;
 }
 
@@ -24,11 +24,17 @@
   
 }
 
+.vet-referral-h1 {
+	text-align: center;
+	padding-top: .5em;
+}
+
 
 .table-head {
   display: table-cell;
   min-width: 15em;
 	text-align: left;
+	font-weight: 700;
 }
 
 .table-content {

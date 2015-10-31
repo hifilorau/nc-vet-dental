@@ -1,8 +1,9 @@
 app.referralForm = function () {
-Parse.initialize('DUakhwUMYR0lBKbcQWbnP1zH4wgVVJTVXe8FVrih', '08GwtDSqtyA2xH1Ru4Fz17LKxu7pVqxRBLkZUYzj');
-	
-var ReferralForm = Parse.Object.extend("ReferralForm");
+//Parse.initialize('DUakhwUMYR0lBKbcQWbnP1zH4wgVVJTVXe8FVrih', '08GwtDSqtyA2xH1Ru4Fz17LKxu7pVqxRBLkZUYzj');
+//	
+//var ReferralForm = Parse.Object.extend("ReferralForm");
 //referralForm = new ReferralForm();
+		var vetDentalReferral = new Firebase("https://vet-dental-referral.firebaseio.com/");
 
 	
 //			var data = {
@@ -31,10 +32,12 @@ var ReferralForm = Parse.Object.extend("ReferralForm");
 		console.log('maybe');
 		e.preventDefault();
 //		e.stopPropagation();
-	
+	var newReferral = new Firebase("https://vet-dental-referral.firebaseio.com/referral");
+		
+//		var newReferral = referralForm.child('form');
 		//form data
-		referralForm = new ReferralForm();
-		referralForm.save({
+	
+		newReferral.push({
 			petName: $('#pet-name').val(),
 			breed: $('#breed').val(),
 			sex: $('input[type="radio"][name="sex"]:checked').val(),
@@ -53,20 +56,15 @@ var ReferralForm = Parse.Object.extend("ReferralForm");
 			medications: $('#medications').val(),
 			allergies: $('#allergies').val(),
 			prevDental: $('#prev-dental').val()	
-		},{
-			success: function(referralForm) {
-				console.log(referralForm);
-			},
-			error: function(referralForm, error) {
-            console.log(parseObj);
-            console.log(error);
-        }   
 		});
-		
-		
-	
-		
-		
+//										 ,{
+//			success: function(referralForm) {
+//				console.log(referralForm);
+//			},
+//			error: function(referralForm, error) {
+//            console.log(parseObj);
+//            console.log(error);
+//        }   		
 	});
 	
 };
