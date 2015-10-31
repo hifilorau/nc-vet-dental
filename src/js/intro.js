@@ -9,10 +9,10 @@ $(function() {
 	
 		var siteState = localStorage.getItem("siteState");
 	  console.log(siteState);
-  	 $('.footer').hide();
-		 $('.desktop-nav-container').hide();
+  	$('.footer').hide();
+		$('.desktop-nav-container').hide();
     checkState();
-	
+	  $('.slides').hide(); 
 	
 	///// pet side intro
 //	$('.pet-button').click(function(){
@@ -80,6 +80,7 @@ $(function() {
 			$('.hero-overlay').hide();
 			$('.hero-content-intro').hide();
 			$('.hero-content-main').fadeIn(2000);
+			$('.slides').show(); 
     }, 500);	
 	
 	}
