@@ -12,7 +12,6 @@ $(function() {
   	$('.footer').hide();
 		$('.desktop-nav-container').hide();
     checkState();
-	  $('.slides').hide(); 
 	
 	///// pet side intro
 //	$('.pet-button').click(function(){
@@ -26,6 +25,7 @@ $(function() {
 	///// vet side 
 	$('.vet-button').click(function(){
 		siteState = "referrals";
+		$('.slides').hide(); 
 		localStorage.setItem("siteState", siteState);
 		delayThings();
 		checkState();
@@ -80,7 +80,6 @@ $(function() {
 			$('.hero-overlay').hide();
 			$('.hero-content-intro').hide();
 			$('.hero-content-main').fadeIn(2000);
-			$('.slides').show(); 
     }, 500);	
 	
 	}
