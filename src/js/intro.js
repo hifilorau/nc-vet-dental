@@ -11,6 +11,7 @@ $(function() {
 	  console.log(siteState);
   	$('.footer').hide();
 		$('.desktop-nav-container').hide();
+	  $('.slides').hide();
     checkState();
 	
 	///// pet side intro
@@ -25,7 +26,7 @@ $(function() {
 	///// vet side 
 	$('.vet-button').click(function(){
 		siteState = "referrals";
-		$('.slides').hide(); 
+//		$('.slides').hide(); 
 		localStorage.setItem("siteState", siteState);
 		delayThings();
 		checkState();
@@ -42,13 +43,15 @@ $(function() {
 	
 	$('.pet-button').click(function(){
 		siteState = 'pet-owners';
-		$('.slides').show(); 
+		$('.slides').show();
 	  localStorage.setItem('siteState', siteState);
 		delayThings();
 		checkState();
 		$('.referral-overlay').hide("slide", { direction: "right" }, 2000);
 		$('.client-overlay').hide("slide", { direction: "left" }, 2000);
 		$('.hero-content-wrapper').hide();	
+		$('.slides').show(); 
+		console.log('show');
 	});
 
 

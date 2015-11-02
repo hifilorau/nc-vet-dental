@@ -1,7 +1,4 @@
 $(function() {
-
-
-$('.slides').slick();
-
-
+$('.slides').slick()
+console.log('sliding');
 });

@@ -264,7 +264,11 @@ $box-width: 250px;
 }
 
 
-
+.slides {
+//	min-height:  700px;
+//	z-index: 1000000000;
+	
+}
 
 @media screen and (max-width: 750px) {
 		.section-1 h2, .list-wrapper h2, h2 {
