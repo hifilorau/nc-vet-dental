@@ -42,6 +42,7 @@ $(function() {
 	
 	$('.pet-button').click(function(){
 		siteState = 'pet-owners';
+		$('.slides').show(); 
 	  localStorage.setItem('siteState', siteState);
 		delayThings();
 		checkState();
