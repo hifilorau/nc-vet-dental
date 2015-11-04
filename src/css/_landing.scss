@@ -8,7 +8,7 @@
 //		padding: 1em .5em;
 		font-size: 2.2em;
 		max-width: 15em;
-		color: lightblue;
+		color: $main-color;
 		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 1px;
 	
@@ -36,18 +36,24 @@
 	transform:translate(-50%);
 	text-align: center;
 	button {
-		background-color: black;
-		border: none;
-		color: white;
+		background-color: transparent;
+		border: 2px solid rgb(231,200,191);
+		color: rgb(231,200,191);
 		padding: .5em 1em;
 		font-size: 1.3em;
+		/*font-family: $font-one;*/
 		border-radius: .2em;
 		cursor: pointer;
 	}
 	
 	h1 {
-	min-height: 2.9em;
+	/*min-height: 2.9em;*/
+	font-family: $font-one;
+	font-weight: lighter;
+	color: white;
 	}
+
+
 }
 
 .referral-overlay, .client-overlay {
@@ -61,18 +67,18 @@
 }
 
 .client-overlay {
+ background: url("https://s3-us-west-2.amazonaws.com/krista-anne/dog_right.jpeg") no-repeat left top;
  left: 0;
  right: auto;
- background: url("https://images.unsplash.com/photo-1422565096762-bdb997a56a84?ixlib=rb-0.3.5&q=80&fm=jpg&s=66e51dee4412efd90af559ff6266e7c7") no-repeat right top;
  background-size: cover;
- background-position: -18em 0em;
+ background-position: -27em 0em;
 	
 }
 
 .referral-overlay {
-	background: url("https://images.unsplash.com/photo-1431613567644-1c0d5d7d1c8c?ixlib=rb-0.3.5&q=80&fm=jpg&s=680880496ca3dd9fac5448c545bf864f") no-repeat left top;
+    background: url("https://s3-us-west-2.amazonaws.com/krista-anne/right_dog_dark.jpg") no-repeat right top;
 	background-size: cover;
-	background-position: -5em 0em;
+	background-position: -2em 0em;
 
 }
 
@@ -151,16 +157,18 @@ $box-width: 250px;
  }	
 }
 	.pet-button {
-//		border: 1px solid $secondary-color;d
+    	border: 1px solid white;
 		display: inline-block;
 		margin-top: .5em;
 		padding: .4em 1em;
 		color: white;
-		background-color: $secondary-color;
+		background-color: transparent;
 	}
 
-.pet-button:hover {
-	background-color: $main-color;
+.pet-button:hover, .vet-button:hover{
+	border: 3px solid;
+	/*transition: all 1s;*/
+
 }
 
 .section-list-container {
