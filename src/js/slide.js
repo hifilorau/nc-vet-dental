@@ -1,4 +1,7 @@
 $(function() {
-$('.slides').slick()
-console.log('sliding');
+$('.slides').slick({
+	autoplay: true,
+	autoplaySpeed: 6000,
+	fade: true
+});
 });

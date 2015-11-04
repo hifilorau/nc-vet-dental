@@ -11,7 +11,7 @@ $(function() {
 	  console.log(siteState);
   	$('.footer').hide();
 		$('.desktop-nav-container').hide();
-	  $('.slides').hide();
+//	  $('.slides').hide();
     checkState();
 	
 	///// pet side intro

@@ -1,5 +1,5 @@
 .hero-container {
-	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg ) no-repeat center center fixed;
+//	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg ) no-repeat center center fixed;
 	background-size: cover;
 	min-height: 100vh;
 	position: relative;
@@ -8,7 +8,7 @@
 //		padding: 1em .5em;
 		font-size: 2.2em;
 		max-width: 15em;
-		color: $main-color;
+		color: white;
 		font-family: 'Open Sans', sans-serif;
 		letter-spacing: 1px;
 	
@@ -159,7 +159,7 @@ $box-width: 250px;
 	.pet-button {
     	border: 1px solid white;
 		display: inline-block;
-		margin-top: .5em;
+//		margin-top: .5em;
 		padding: .4em 1em;
 		color: white;
 		background-color: transparent;
@@ -271,7 +271,10 @@ $box-width: 250px;
 	}
 }
 
-
+///////// slick carousel stuff
+.slick-slide {
+	background-size: cover;
+}
 .slides {
 //	min-height:  700px;
 //	z-index: 1000000000;
@@ -279,11 +282,30 @@ $box-width: 250px;
 }
 
 .slide-1, .slide-2, .slide-3 {
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
+	width: 100%;
+	min-height: 700px;
+	background-size: cover;
+	position: relative;
+	z-index: 10000000000;
+
 }
 
+.slide-1 {
+	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.slide-2 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
+	background-size: cover;}
+
+.slide-3 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
+	background-size: cover;}
+
+.slide-text {
+	padding-top: 2em;
+	margin: 0 auto;
+	max-width: 35em;
+}
 @media screen and (max-width: 750px) {
 		.section-1 h2, .list-wrapper h2, h2 {
 			font-size: 2rem;
