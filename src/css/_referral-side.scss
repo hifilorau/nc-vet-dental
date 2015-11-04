@@ -5,13 +5,16 @@
 	position: relative;
 	z-index: 10;
   font-size: 1.2em;
+	min-height: 700px;
+
 }
 
 .vet-content {
-	padding-top: 1em;
+//	padding-top: 1em;
   display: table; 
 	max-width: 1050px;
 	margin: 0 auto;
+	padding: 1em 1em 0;
 }
 
 .refer-row {
@@ -43,6 +46,22 @@
 	text-align: left;
 }
 
+.thank-you-container {
+	min-height: 700px;
+}
+
+.thank-you, .thank-you2 {
+	max-width: 40em;
+	padding: 3em 1em 0;
+	margin: 0 auto;
+	font-size:1.2em;
+}
+
+.thank-you2 {
+	padding-top: .25em;
+}
+
+
 @media screen and (max-width: 750px) {
 	
 	.referral-container {
@@ -52,6 +71,13 @@
 	.vet-content, .table-head, .table-content {
 		display: block;
 	}
+	
+	
+	.thank-you {
+		padding-top: 8em;
+	
+	}
+	
 
 
 

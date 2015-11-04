@@ -57,14 +57,8 @@ app.referralForm = function () {
 			allergies: $('#allergies').val(),
 			prevDental: $('#prev-dental').val()	
 		});
-//										 ,{
-//			success: function(referralForm) {
-//				console.log(referralForm);
-//			},
-//			error: function(referralForm, error) {
-//            console.log(parseObj);
-//            console.log(error);
-//        }   		
+		
+		 window.location = "confirmation.html";
 	});
 	
 };
