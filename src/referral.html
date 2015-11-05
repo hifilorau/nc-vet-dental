@@ -30,124 +30,126 @@
     <header class="header"></header>
 		  <div class="shiv"></div>
     <div class="site-wrap">
-			<form id="gform" action="" class="pure-form pure-form-stacked">
+      <div class="form-wrap">
+  			<form id="gform" action="" class="pure-form pure-form-stacked">
 
-			<fieldset class="pure-group">
-				<label for="name">Pet Name </label>
-				<input type="text" id="pet-name" name="pet-name" placeholder="What is the pet's name?" />
-			</fieldset>
+  			<fieldset class="pure-group">
+  				<label for="name">Pet Name </label>
+  				<input type="text" id="pet-name" name="pet-name" placeholder="What is the pet's name?" />
+  			</fieldset>
 
-    <fieldset class="pure-group">
-      <label for="breed">Breed </label>
-      <input type="text" id="breed" name="breed" placeholder="What is the pet's breed?" />
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="sex">Sex </label>
-			<div class="sex-div">
-      <input type="radio" name="sex" id="sex-m" value="male" checked>Male
-			</div>
-			<div class="sex-div">
-			<input type="radio" name="sex" id="sex-f" value="female">Female
-			</div>
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="spayed-neutered">Spayed or Neutured</label>
-			<div class="sex-div">
-      <input type="radio" id="spayed-neutered-y" name="spayed-neutered" value="yes" checked>Yes
-			</div>
-			<div class="sex-div">
-			<input type="radio" id="spayed-neutered-n" name="spayed-neutered" value="no">No
-			</div>
-    </fieldset>
-				
-		 <fieldset class="pure-group">
-      <label for="age">Age/D.O.B. </label>
-      <input type="text" id="age" name="age" placeholder="When was your pet born?" />
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="color">Color </label>
-      <input type="text" id="color" name="color" placeholder="What color is the pet?" />
-    </fieldset>
-				
-			
-		<fieldset class="pure-group">
-      <label for="owner-name">Owner's Name</label>
-      <input type="text" id="owner-name" name="owner-name" placeholder="What is the owner's name?" />
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="owner-number">Owner's phone #</label>
-      <input  type="text"id="owner-number" name="owner-number" placeholder="What is the owner's number?" />
-    </fieldset>
-				
-		 <fieldset class="pure-group">
-      <label for="vet-name">Veternarian Name</label>
-      <input type="text" id="vet-name" name="vet-name" placeholder="What is the veternarian name?" />
-    </fieldset>
-				
-		
+      <fieldset class="pure-group">
+        <label for="breed">Breed </label>
+        <input type="text" id="breed" name="breed" placeholder="What is the pet's breed?" />
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="sex">Sex </label>
+  			<div class="sex-div">
+        <input type="radio" name="sex" id="sex-m" value="male" checked>Male
+  			</div>
+  			<div class="sex-div">
+  			<input type="radio" name="sex" id="sex-f" value="female">Female
+  			</div>
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="spayed-neutered">Spayed or Neutured</label>
+  			<div class="sex-div">
+        <input type="radio" id="spayed-neutered-y" name="spayed-neutered" value="yes" checked>Yes
+  			</div>
+  			<div class="sex-div">
+  			<input type="radio" id="spayed-neutered-n" name="spayed-neutered" value="no">No
+  			</div>
+      </fieldset>
+  				
+  		 <fieldset class="pure-group">
+        <label for="age">Age/D.O.B. </label>
+        <input type="text" id="age" name="age" placeholder="When was your pet born?" />
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="color">Color </label>
+        <input type="text" id="color" name="color" placeholder="What color is the pet?" />
+      </fieldset>
+  				
+  			
+  		<fieldset class="pure-group">
+        <label for="owner-name">Owner's Name</label>
+        <input type="text" id="owner-name" name="owner-name" placeholder="What is the owner's name?" />
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="owner-number">Owner's phone #</label>
+        <input  type="text"id="owner-number" name="owner-number" placeholder="What is the owner's number?" />
+      </fieldset>
+  				
+  		 <fieldset class="pure-group">
+        <label for="vet-name">Veternarian Name</label>
+        <input type="text" id="vet-name" name="vet-name" placeholder="What is the veternarian name?" />
+      </fieldset>
+  				
+  		
 
-    <fieldset class="pure-group">
-      <label for="email"><em>Veternarians'</em> Email Address:</label>
-      <input type="email" id="vet-email" name="vet-email" type="email" value=""
-      required placeholder="your.name@email.com"/>
-      <span id="email-invalid" style="visibility:hidden">
-        Must be a valid email address</span>
-    </fieldset>
-				
-		 <fieldset class="pure-group">
-      <label for="clinic">Name of Hospital or Clinic</label>
-      <input  type="text" id="clinic-name" name="clinic-name" placeholder="What is the name of your clinic or pet hospital?" />
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="fax-number">Fax #</label>
-      <input type="text" id="fax-number" name="fax-number" placeholder="What is the fax # at your practice?" />
-    </fieldset>
-				
-				
-		<fieldset class="pure-group">
-      <label for="clinic-phone-number">Clinic Phone #</label>
-      <input type="text" id="clinic-phone-number" name="clinic-phone-number" placeholder="What is the phone # at your practice?" />
-    </fieldset>
-				
-     <fieldset class="pure-group">
-      <label for="reason">Reason for Referral</label>
-      <textarea id="reason" name="reason" rows="10"
-      placeholder="Why are you referring us the patient?"></textarea>
-    </fieldset>
-				
-		 <fieldset class="pure-group">
-      <label for="med-history">Past Medical History</label>
-      <textarea id="med-history" name="med-history" rows="10"
-      placeholder="Patient's past medical history (please list all major illnesses and dates)"></textarea>
-    </fieldset>
-					
-		 <fieldset class="pure-group">
-      <label for="medications">Current Medications</label>
-      <textarea id="medications" name="medications" rows="10"
-      placeholder="Current Medications(please include doseage)"></textarea>
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="allergies">Allergies and Anesthetic Complications</label>
-      <textarea id="allergies" name="allergies" rows="10"
-      placeholder="Please list all drug allergies and anesthetic complications?"></textarea>
-    </fieldset>
-				
-		<fieldset class="pure-group">
-      <label for="prev-dental">Previous Dental Care</label>
-      <textarea id="prev-dental" name="prev-dental" rows="10"
-      placeholder="Previous Dental Care (please include dates)?"></textarea>
-    </fieldset>
+      <fieldset class="pure-group">
+        <label for="email"><em>Veternarians'</em> Email Address:</label>
+        <input type="email" id="vet-email" name="vet-email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+        <span id="email-invalid" style="visibility:hidden">
+          Must be a valid email address</span>
+      </fieldset>
+  				
+  		 <fieldset class="pure-group">
+        <label for="clinic">Name of Hospital or Clinic</label>
+        <input  type="text" id="clinic-name" name="clinic-name" placeholder="What is the name of your clinic or pet hospital?" />
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="fax-number">Fax #</label>
+        <input type="text" id="fax-number" name="fax-number" placeholder="What is the fax # at your practice?" />
+      </fieldset>
+  				
+  				
+  		<fieldset class="pure-group">
+        <label for="clinic-phone-number">Clinic Phone #</label>
+        <input type="text" id="clinic-phone-number" name="clinic-phone-number" placeholder="What is the phone # at your practice?" />
+      </fieldset>
+  				
+       <fieldset class="pure-group">
+        <label for="reason">Reason for Referral</label>
+        <textarea id="reason" name="reason" rows="10"
+        placeholder="Why are you referring us the patient?"></textarea>
+      </fieldset>
+  				
+  		 <fieldset class="pure-group">
+        <label for="med-history">Past Medical History</label>
+        <textarea id="med-history" name="med-history" rows="10"
+        placeholder="Patient's past medical history (please list all major illnesses and dates)"></textarea>
+      </fieldset>
+  					
+  		 <fieldset class="pure-group">
+        <label for="medications">Current Medications</label>
+        <textarea id="medications" name="medications" rows="10"
+        placeholder="Current Medications(please include doseage)"></textarea>
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="allergies">Allergies and Anesthetic Complications</label>
+        <textarea id="allergies" name="allergies" rows="10"
+        placeholder="Please list all drug allergies and anesthetic complications?"></textarea>
+      </fieldset>
+  				
+  		<fieldset class="pure-group">
+        <label for="prev-dental">Previous Dental Care</label>
+        <textarea id="prev-dental" name="prev-dental" rows="10"
+        placeholder="Previous Dental Care (please include dates)?"></textarea>
+      </fieldset>
 
-    <input type="submit" class="button-success pure-button button-xlarge">
-     </input>
+      <input type="submit" class="button-success pure-button button-xlarge">
+       </input>
 
-  </form>
+    </form>
+  </div>
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
