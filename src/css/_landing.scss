@@ -29,6 +29,12 @@
 	width: 50%;
 }
 
+
+.landing-wrapper {
+ display: flex;
+ flex-wrap: wrap;
+}
+
 .hero-content-intro {
 	position: absolute;
 	top: 40vh;
@@ -72,6 +78,7 @@
  right: auto;
  background-size: cover;
  background-position: -27em 0em;
+ max-width: 50%;
 	
 }
 
