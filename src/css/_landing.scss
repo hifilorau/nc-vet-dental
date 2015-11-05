@@ -275,18 +275,23 @@ $box-width: 250px;
 .slick-slide {
 	background-size: cover;
 }
+
+.slick-slider {
+	margin-bottom: 0 !important;
+}
 .slides {
-//	min-height:  700px;
+//	min-height:  100vh;
 //	z-index: 1000000000;
 	
 }
 
 .slide-1, .slide-2, .slide-3 {
 	width: 100%;
-	min-height: 700px;
+	height: 100vh;
 	background-size: cover;
 	position: relative;
 	z-index: 10000000000;
+	 background-position: 122px 0;
 
 }
 
@@ -295,16 +300,19 @@ $box-width: 250px;
 	background-size: cover;
 }
 
-.slide-2 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
+.slide-2 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-grass.jpg) no-repeat center center fixed;
 	background-size: cover;}
 
-.slide-3 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
+.slide-3 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/cat1.jpg) no-repeat center center fixed;
 	background-size: cover;}
 
 .slide-text {
-	padding-top: 2em;
-	margin: 0 auto;
+ 	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	max-width: 35em;
+//	min-height: 100vh;
 }
 @media screen and (max-width: 750px) {
 		.section-1 h2, .list-wrapper h2, h2 {
