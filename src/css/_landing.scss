@@ -314,6 +314,12 @@ $box-width: 250px;
 	max-width: 35em;
 //	min-height: 100vh;
 }
+
+.slick-arrow {
+	display: none;
+}
+
+
 @media screen and (max-width: 750px) {
 		.section-1 h2, .list-wrapper h2, h2 {
 			font-size: 2rem;
