@@ -49,8 +49,9 @@ $(function() {
 	  localStorage.setItem('siteState', siteState);
 		delayThings();
 		checkState();
-		$('.referral-overlay').hide("slide", { direction: "right" }, 2000);
-		$('.client-overlay').hide("slide", { direction: "left" }, 2000);
+			$('.referral-overlay').fadeOut({duration: 1000});
+		setTimeout(function(){}, 1000)
+		$('.client-overlay').fadeOut({ duration: 1000});
 		$('.hero-content-wrapper').hide();	
 		$('.slides').show(); 
 		console.log('show');
