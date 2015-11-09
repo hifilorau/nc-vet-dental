@@ -171,12 +171,35 @@ svg {
 
 /* Footer STUFF */
 
+.footer-2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 8em;
+	
+background: rgba(212,228,239,0);
+background: -moz-linear-gradient(top, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,0)), color-stop(100%, rgba(13,14,15,1)));
+background: -webkit-linear-gradient(top, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
+background: -o-linear-gradient(top, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
+background: linear-gradient(to bottom, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#0d0e0f', GradientType=0 );
+	color: white;
+	z-index: 10000000000000;
+}
+
+
+
+
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-	background-color: $main-color;
+    background-color: $main-color;
+    border-top: 2px solid white;
 	color: white;
 	padding: 2em 0;
 	z-index: 100000;
