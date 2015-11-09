@@ -4,7 +4,8 @@ $('.slides').slick({
 	autoplaySpeed: 6000,
 	speed: 1000,
 	fade: true,
-	arrow: false
+	arrow: false,
+	pauseOnHover: false
 
 });
 });
