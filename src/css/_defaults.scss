@@ -16,7 +16,7 @@ html{height:100%; width:100%;}
 body {
     font-family: $font-one;
     line-height: 1.4;
-    background: #F8F5E6;
+    background: $main-color;
     color: #444;
 	  -webkit-font-smoothing:antialiased;
 	  -moz-osx-font-smoothing: grayscale;
@@ -26,19 +26,19 @@ body {
 
 .shiv {
 	height: 112px;
+//	background-color: transparent;
 }
 
 .site-wrap {
   /* Critical position and size styles */
 //  min-height: 100%;
   min-width: 100%;
-  background-color: #F8F5E6; /* Needs a background or else the nav will show through */
+  background-color: $main-color; /* Needs a background or else the nav will show through */
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
   z-index: 1;
-//	margin-top: 112px; 
 //	max-width: 1100px;
   	margin: 0 auto;
 //  background-position: 122px 0;
@@ -50,10 +50,11 @@ body {
 
 h1 { font-size: 2em;}
 h2 { font-size: 2.3rem;
-	font-family: $font-two;
+	font-family: 'Open Sans';
 	margin-bottom: .5rem;
 	color: #449bb5;
 	text-align: center;
+	font-weight: 400;
 }
 h3 { font-size: 1.17em;
 font-family: $font-two;}
@@ -61,7 +62,7 @@ h5 { font-size: .83em;}
 h6 { font-size: .75em;}
 h1, h2, h3, h4,
 h5, h6 {
-  font-weight: bolder
+//  font-weight: bolder
 }
 
 p {

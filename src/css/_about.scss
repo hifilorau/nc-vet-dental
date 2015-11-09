@@ -11,7 +11,7 @@
 }
 
 .philosophy-container {
-	padding-top: 2em;
+	padding-top: 3em;
 	/*max-width: 1100px;*/
 	min-height: 74vh;
 	color: white;
@@ -31,7 +31,7 @@
 
 .philosophy-text {
 	/*width: 50rem;*/
-	padding: 0 1em;
+	padding: 7em 1em;
 	max-width: 60rem;
 	margin: -50px auto 0;
 	clear: right;
@@ -39,6 +39,10 @@
 	position: relative;
 	z-index: 1000;
 	font-size: 1.2em;
+	
+	p:last-child {
+		padding-top: 1em;
+	}
 }
 
 @media screen and (max-width: 735px) {

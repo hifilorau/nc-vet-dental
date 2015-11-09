@@ -30,14 +30,10 @@
 }
 
 
-.landing-wrapper {
- display: flex;
- /*flex-direction; row-reverse;*/
-}
 
 .hero-content-intro {
 	position: absolute;
-	top: 40vh;
+	top: 50vh;
 	left: 50%;
 	transform:translate(-50%);
 	text-align: center;
@@ -89,19 +85,10 @@
 
 }
 
-.hero-content-main {
-	position: relative;
-	z-index: 1000;
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-	h1 {max-width: 100%;}
-	
-}
-
 
 .section-1 {
 	padding: 4rem 1.5rem;
+	background-color: whitesmoke;
 	h2 {
 		text-align: center;
 		font-size: 2.6rem;
@@ -299,33 +286,96 @@ $box-width: 250px;
 	position: relative;
 	z-index: 10000000000;
 	 background-position: 122px 0;
+}
 
+.slide-text {
+ 	position: absolute;
+//	transform: translate(-50%, -50%);
+	z-index: 100000;
+	font-weight: 300;
+//	min-height: 100vh;
 }
 
 .slide-1 {
 	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-brown.jpg) no-repeat center center fixed;
 	background-size: cover;
+	.slide-text {
+		top:35%;
+		right:8%;
+		max-width: 25rem;
+	}
 }
 
-.slide-2 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/dog-grass.jpg) no-repeat center center fixed;
-	background-size: cover;}
+.slide-2 {	background: url(https://s3-us-west-2.amazonaws.com/krista-anne/dog_right.jpeg ) no-repeat center center fixed;
+	background-size: cover;
+		.slide-text {
+		top:40%;
+		right:15%;
+		max-width: 20rem;
+	}
+}
 
 .slide-3 {	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/cat1.jpg) no-repeat center center fixed;
-	background-size: cover;}
+	background-size: cover;
+	.slide-text {
+		top:35%;
+		left:15%;
+		max-width: 25rem;
+	}
 
-.slide-text {
- 	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 35em;
-//	min-height: 100vh;
 }
+
 
 .slick-arrow {
-	display: none;
+	display: none !important;
 }
 
+
+//.referral-overlay, .client-overlay {
+//	position: absolute;
+//	top: -112px;
+//	right: 0;
+//	width: 50%;
+//	background-color: tan;
+//	bottom: 0;
+//	z-index: 100;
+//}
+//
+//.client-overlay {
+// background: url("https://s3-us-west-2.amazonaws.com/krista-anne/dog_right.jpeg") no-repeat left top;
+// left: 0;
+// right: auto;
+// background-size: cover;
+// background-position: -27em 0em;
+// max-width: 50%;
+//	
+//}
+//
+//.referral-overlay {
+//    background: url("https://s3-us-west-2.amazonaws.com/krista-anne/right_dog_dark.jpg") no-repeat right top;
+//	background-size: cover;
+//	background-position: -2em 0em;
+//
+//}
+
+
+
+@media screen and (max-width: 870px) { 
+	.referral-overlay, .client-overlay {
+//		background: green;
+		position: relative;
+		display: block;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+		width: 100%;
+		height: 50vh;
+		max-width: 100%;
+		background-position: 0 0;
+	}
+
+}
 
 @media screen and (max-width: 750px) {
 		.section-1 h2, .list-wrapper h2, h2 {
