@@ -30,6 +30,7 @@
 }
 
 
+
 .hero-content-intro {
 	position: absolute;
 	top: 50vh;
@@ -59,6 +60,7 @@
 
 .referral-overlay, .client-overlay {
 	position: absolute;
+	display: flex;
 	top: -112px;
 	right: 0;
 	width: 50%;
@@ -73,7 +75,6 @@
  right: auto;
  background-size: cover;
  background-position: -27em 0em;
- max-width: 50%;
 	
 }
 
@@ -87,12 +88,14 @@
 
 .section-1 {
 	padding: 4rem 1.5rem;
-	background-color: whitesmoke;
+	background-color: #353738;
+	border-top: 2px solid white;
 	h2 {
 		text-align: center;
 		font-size: 2.6rem;
 	}
 	p {
+		color: white;
 		max-width: 40rem;
 		font-size: 1.4rem;
 		margin: 0 auto;
@@ -359,6 +362,36 @@ $box-width: 250px;
 //}
 
 
+.homepage-social-links {
+ 	position: absolute;
+ 	right: 0;
+ 	bottom: 0;
+ 	color: white;
+ 	font-size: 1.7em;
+ 	padding: .2em;
+ 	margin-right: 1em;
+    li {
+     display: inline;
+
+    a {
+     color: white;	
+    }
+    }
+
+
+}
+
+.homepage-contact {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 1em;
+	text-align: center;
+	color: gray;
+}
+
+
 
 @media screen and (max-width: 870px) { 
 	.referral-overlay, .client-overlay {
@@ -414,7 +447,20 @@ $box-width: 250px;
 				max-width: 300px;
 				font-size: 1.1em;
 			}
-		}
+          }
+
+    .referral-overlay {
+    	width: 100%;
+    	height: 50vh;
+    }
+
+    .client-overlay {
+    	top: 50%;
+    }
+
+	.landing-wrapper {
+		flex-direction: column;
+	}
 
 }
 
