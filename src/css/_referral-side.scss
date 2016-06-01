@@ -14,7 +14,7 @@ background-color: whitesmoke;
 	position: relative;
 	z-index: 10;
   font-size: 1.2em;
-	min-height: 700px;
+//	min-height: 700px;
 }
 
 .referral-p {
@@ -72,13 +72,14 @@ background-color: whitesmoke;
 
 .thank-you-container {
 	min-height: 700px;
+	background: whitesmoke;
 }
 
 .thank-you, .thank-you2 {
-	max-width: 40em;
+	max-width: 37em;
 	padding: 3em 1em 0;
 	margin: 0 auto;
-	font-size:1.2em;
+	font-size:1.5em;
 }
 
 .thank-you2 {

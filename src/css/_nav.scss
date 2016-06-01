@@ -33,12 +33,12 @@
 
 
 .desk-nav-item {
-	
+
 	 margin-top: 3.2em;
 	 padding: 0 .75em;
 	 display: inline-block;
 
-	
+
 	a {
 		font-size: 1.1em;
 		color: $background-color;
@@ -52,7 +52,8 @@
 	margin-left: 2em;
 }
 .nav-logo {
-	width: 170px;
+  margin-top: .5em;
+	width: 240px;
 	height: auto;
 }
 
@@ -77,6 +78,7 @@
 /* Mobile Navigation Menu - Background */
 
 
+
 .navigation {
   /* critical sizing and position styles */
   width: 100%;
@@ -87,11 +89,18 @@
   bottom: 0;
   left: 0;
   z-index: 0;
-  
+  display: none;
+  opacity: 0;
+
+
   /* non-critical appearance styles */
   list-style: none;
   background: $secondary-color;
-  display: none;
+}
+
+.nav-shower {
+  display: block;
+  opacity: 1;
 }
 
 /* Navigation Menu - List items */
@@ -126,17 +135,18 @@
   /* critical styles - hide the checkbox input */
   position: absolute;
   clip: rect(0, 0, 0, 0);
+  /*z-index: 100000;*/
 }
 
 label[for="nav-trigger"] {
   /* critical positioning styles */
   position: fixed;
   left: 15px; top: 15px;
-  z-index: 2;
-  
+  z-index: 20000000;
+
   /* non-critical apperance styles */
   height: 30px;
-  width: 30px;
+  width: 40px !important;
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='#449BB5'/><rect y='24' width='30' height='6' fill='#449BB5'/><rect y='12' width='30' height='6' fill='#449BB5'/></svg>");
   background-size: contain;
@@ -177,7 +187,7 @@ svg {
 	left: 0;
 	right: 0;
 	height: 8em;
-	
+
 background: rgba(212,228,239,0);
 background: -moz-linear-gradient(top, rgba(212,228,239,0) 0%, rgba(13,14,15,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,0)), color-stop(100%, rgba(13,14,15,1)));
@@ -213,26 +223,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', end
 }
 
 .links {
-	border-right: 1px solid white;
+	/*border-right: 1px solid white;*/
 	padding-right: 1em;
-	
+
 }
 
 .footer-section-2 {
-	font-size: .8em;
+	font-size: 1em;
 	vertical-align: bottom;
 	display: inline-block;
+	margin-top: 1.5em;
 }
 
 .footer-social-links{
-	border-left: 1px solid white;
 	padding-left: 1em;
 	min-height: 132px;
 
   li {
     display:inline;
   }
- 
+
 	a {
 		font-size: 2em;
 		margin-right: .1em;
@@ -267,31 +277,40 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+
+  .footer {
+    display: none;
+  }
+
   label[for="nav-trigger"], .navigation{
     display: block;
   }
-	
+
+  label[for="nav-trigger"] {
+    z-index: 1000000000;
+  }
+
 	.site-wrap {
 		margin-top: 0px;
 	}
 
   .desktop-nav-container, .shiv {
     display: none !important;
-  }  
-	
-	
+  }
+
+
+
 	.footer-social-links{
-	border-left: 1px solid white;
+	border-left: none;
 	padding-left: 1em;
 	min-height: 110px;
 
   li {
     display:block;
   }
- 
+
 }
 		.aaha {
 			margin-left: 4px;
-		}	
+		}
 }
-

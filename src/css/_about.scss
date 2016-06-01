@@ -11,50 +11,77 @@
 }
 
 .philosophy-container {
-	padding-top: 3em;
+	padding: 4em 2em;
 	/*max-width: 1100px;*/
 	min-height: 74vh;
 	color: white;
-	background: url(https://images.unsplash.com/photo-1422363037975-f6a4c2c924fc?q=80&fm=jpg&s=5cf3a74e5cf22d1581f15457d4e10430) no-repeat center center fixed;
+	background: url('https://images.unsplash.com/photo-1422363037975-f6a4c2c924fc?q=80&fm=jpg&s=5cf3a74e5cf22d1581f15457d4e10430') no-repeat center center fixed;
 	background-size: cover;
 	background-position: 0 0px;
 	position: relative;
 	display:flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
-	
-	
+
+
 	p {margin-bottom: 0;}
 
+}
+
+.image-wrapper {
+	margin: 12em auto 2em;;
+	max-width: 320px;
+	position: relative;
+	text-align: center;
+	z-index: 102;
+	border-radius: .3em;
+	overflow: hidden;
+	height: 320px;
+	border: white 1px solid;
+	img {
+		position: relative;
+		/*background: #eee;*/
+		border-radius: .3;
+		width: 100%;
+	}
 }
 
 
 .philosophy-text {
 	/*width: 50rem;*/
 	padding: 7em 1em;
-	max-width: 60rem;
+	max-width: 30rem;
 	margin: -50px auto 0;
 	clear: right;
 	text-align: left;
 	position: relative;
 	z-index: 1000;
 	font-size: 1.2em;
-	
+
 	p:last-child {
 		padding-top: 1em;
 	}
 }
 
-@media screen and (max-width: 735px) {
-	
-	.philosophy-container {
-		padding: 5em 0 2em;
+@media screen and (max-width: 863px) {
+	.image-wrapper {
+		margin-top: 0em;
 	}
-	
+}
+@media screen and (max-width: 750px) {
+	.philosophy-text {
+		padding-top: 0em;
+	}
+}
+
+@media screen and (max-width: 735px) {
+
+	.philosophy-container {
+		padding: 3em 0 2em;
+	}
+
 	.philosophy-text {
 		margin-top: 0;
 	}
 }
-
-
-

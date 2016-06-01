@@ -1,5 +1,5 @@
 .services-container {
-	background: url(https://s3-us-west-2.amazonaws.com/westside-animal/cat1.jpg) no-repeat center center fixed;
+	background: url('https://s3-us-west-2.amazonaws.com/westside-animal/cat1.jpg') no-repeat center center fixed;
 	background-size: cover;
 	min-height: 80vh;
 	position: relative;
@@ -9,7 +9,7 @@
 	position: relative;
 	z-index: 1000;
 	padding: 8em 0 5em;
-	
+
 	.contact-p {
 		    color: white;
 				z-index: 10;
@@ -42,4 +42,10 @@
 .accordion-content {
 	background-color: rgba(0,0,0,.6);
 	color: white;
+}
+
+@media screen and (max-width: 750px) {
+	.services-content-wrapper {
+		padding-top: 3em;
+	}
 }

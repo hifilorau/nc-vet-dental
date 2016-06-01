@@ -20,7 +20,9 @@ body {
     color: #444;
 	  -webkit-font-smoothing:antialiased;
 	  -moz-osx-font-smoothing: grayscale;
-	  
+    height: auto;
+
+
 //	  font-family: 'Raleway', sans-serif;
 }
 
@@ -29,9 +31,16 @@ body {
 //	background-color: transparent;
 }
 
+.white {
+  color: white !important;
+  position: relative;
+  z-index: 10000000;
+  opacity: 0;
+}
+
 .site-wrap {
   /* Critical position and size styles */
-//  min-height: 100%;
+  min-height: 100%;
   min-width: 100%;
   background-color: $main-color; /* Needs a background or else the nav will show through */
   position: relative;
@@ -42,7 +51,7 @@ body {
 //	max-width: 1100px;
   	margin: 0 auto;
 //  background-position: 122px 0;
-  /* non-critical 
+  /* non-critical
 	backapperance styles */
 //  padding: 4em 0;
 
@@ -95,7 +104,7 @@ a {
 	font-size: 1em;
 }
 
-//mixins 
+//mixins
 
 
 @mixin center($xy:xy) {
@@ -122,4 +131,17 @@ bottom: auto;
 -moz-transform: $attrs;
 -ms-transform: $attrs;
 transform: $attrs;
-}		
+}
+
+@media screen and (max-width: 750px) {
+  .white {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body, html {
+  overflow: hidden;
+  overflow-y: scroll;
+  }
+}

@@ -1,11 +1,11 @@
 app.referralForm = function () {
 //Parse.initialize('DUakhwUMYR0lBKbcQWbnP1zH4wgVVJTVXe8FVrih', '08GwtDSqtyA2xH1Ru4Fz17LKxu7pVqxRBLkZUYzj');
-//	
+//
 //var ReferralForm = Parse.Object.extend("ReferralForm");
 //referralForm = new ReferralForm();
 		var vetDentalReferral = new Firebase("https://vet-dental-referral.firebaseio.com/");
 
-	
+
 //			var data = {
 //			petName: $('#pet-name').val(),
 //			breed: $('#breed').val(),
@@ -24,20 +24,18 @@ app.referralForm = function () {
 //			medHistory: $('#med-history'),
 //			medications: $('#medications'),
 //			allergies: $('#allergies'),
-//			prevDental: $('#prev-dental')	
+//			prevDental: $('#prev-dental')
 //		};
-	
 
-	$('.button-success').click(function(e) {
+
+	$('.referral-submit').submit(function(e) {
 		console.log('maybe');
-		e.preventDefault();
-//		e.stopPropagation();
 	var newReferral = new Firebase("https://vet-dental-referral.firebaseio.com/referral");
-		
+
 //		var newReferral = referralForm.child('form');
 		//form data
-	
-		newReferral.push({
+
+		newReferral.set({
 			petName: $('#pet-name').val(),
 			breed: $('#breed').val(),
 			sex: $('input[type="radio"][name="sex"]:checked').val(),
@@ -55,10 +53,12 @@ app.referralForm = function () {
 			medHistory: $('#med-history').val(),
 			medications: $('#medications').val(),
 			allergies: $('#allergies').val(),
-			prevDental: $('#prev-dental').val()	
+			prevDental: $('#prev-dental').val()
 		});
-		
-		 window.location = "confirmation.html";
+
+		e.preventDefault();
+		e.stopPropagation();
+		window.location = "confirmation.html";
 	});
-	
+
 };
